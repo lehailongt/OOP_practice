@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
 import java.io.PrintWriter;
-import java.io.FileNotFoundException;
+// import java.io.FileNotFoundException;
 import java.util.Iterator;
 
 public class users {
@@ -19,6 +19,7 @@ public class users {
                 int salary = Integer.parseInt(sc_file.nextLine());
                 employees.add(new Employee(code, name, salary));
             }
+            sc_file.close();
             Scanner sc = new Scanner(System.in);
             while(true) {
                 show_menu();
